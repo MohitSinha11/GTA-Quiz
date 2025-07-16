@@ -12,8 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -98,6 +97,39 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 700px){
+
+
+    .Container1 h1{
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.823);
+    padding: 1.5rem;
+    border: 1px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-family: "Bitcount Grid Double", system-ui; 
+}
+
+    .Container1 p{
+        display: none;
+    }
+
+    .Container2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Container2 .card1{
+        width: 200px;
+        height: 200px;
+    }
+
+    
+    
+}
+
 
 
 
