@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Quiz</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fullBg">
+    <div class="Container1">
+        <h1>THE GAMING QUIZ</h1>
+        <p id="final">Your Score is 0 / 0</p>
+        <button class="btn" onclick="quitQuiz()">Quit</button>
+    </div>
+</body>
+
+<script>    
+document.getElementById("final").innerHTML = "Your Score is "+localStorage.getItem("finalscore");
+
+const quitQuiz = () => {
+  localStorage.clear();
+  window.location.href = "index.html";
+};
+
+</script>
+</html>

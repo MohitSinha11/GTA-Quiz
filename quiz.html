@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+<body class="fullBg">
+
+    <div class="container1">
+        <h1>The Gaming Quiz </h1>
+    </div>
+
+    <div class="container2">
+        <p class="question" id="question">
+            Q1. Which of the following is not a GTA 5 character.
+        </p>
+
+        <div class="options" id="option1out" onclick="clickOption('1')">
+            <div class="circle1"></div>
+            <p class="optionIn" id="option1">Big Smoke</p>
+        </div>
+
+        <div class="options" id="option2out" onclick="clickOption('2')">
+            <div class="circle1"></div>
+            <p class="optionIn" id="option2">Big Smoke</p>
+        </div>
+
+        <div class="options" id="option3out" onclick="clickOption('3')">
+            <div class="circle1"></div>
+            <p class="optionIn" id="option3">Big Smoke</p>
+        </div>
+
+        <div class="options" id="option4out" onclick="clickOption('4')">
+            <div class="circle1"></div>
+            <p class="optionIn" id="option4">Big Smoke</p>
+        </div>
+    </div>
+
+    <div class="container3">
+        <button class="btn" onclick="previousQuestion()">Previous</button>
+        <button class="btn" onclick="quitQuiz()">Quit</button>
+        <button class="btn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div class="scoreboard">
+        <p class="score scoreText">Score:</p>
+        <p class="scoreText" id="score">0/0</p>
+    </div>
+
+    <script src="quiz.js"></script>
+    
+</body>
+</html>
